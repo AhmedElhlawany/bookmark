@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="webfonts/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="home">
+        <div class="container text-center pt-5">
+            <h2 class="m-3">Bookmarker</h2>
+           
+            <div class="details mt-5">
+                <h3 class="p-2 m-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h3>
+                
+                <div class="name w-100 text-start">
+                    <label class="ms-2" for="BookmarkName"><i class="fa-solid fa-book-bookmark"></i>  Site Name</label>
+                    <input id="BookmarkName" class="form-control d-block w-100 " type="text" placeholder="Bookmark Name">
+                </div>
+                <div class="url w-100 text-start">
+                    <label class="ms-2 mt-2" for="WebsiteURL"><i class="fa-solid fa-link"></i>  Site URL</label>
+                    <input id="WebsiteURL" class="form-control w-100 m-1" type="url" placeholder="Website URL">
+                </div>
+               
+
+                    <button onclick="addbookmark()" type="button" class="m-2 mb-4">Submit</button>
+
+            </div>
+            <div class="info mt-4 pb-5">
+                <div class="div text-start mb-3">
+                <label class="ms-2 mt-2 " for="searchname"><i class="fa-solid fa-magnifying-glass"></i>  Search Bookmark</label>
+                <input id="searchname" class="form-control w-100 m-1" type="text" oninput="search(this.value)" placeholder="search">
+            </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookmarkdata">
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+
+
+
+            
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

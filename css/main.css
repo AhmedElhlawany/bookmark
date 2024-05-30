@@ -1,0 +1,100 @@
+body
+::selection{
+    background-color: rgb(209, 81, 45);
+}
+
+.home{
+    background-color: rgb(247, 236, 222);
+}
+.container{
+    width: 85%;
+}
+
+
+
+.home h2{
+    font-family: Pacifico, cursive ;
+font-size: 50px;
+font-weight: 500;
+position: relative;
+z-index: 5;
+
+}
+.home h2::after{
+    content: "";
+    width: 29%;
+    height: 30%;
+    position: absolute;
+    background-color: rgb(254, 194, 96);
+    bottom: 2px;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: -2;
+    transition: 0.5s all;
+}
+.home h2:hover::after{
+    content: "";
+    width: 29%;
+    height: 65%;
+    position: absolute;
+    background-color: rgb(254, 194, 96);
+    bottom: 2px;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: -2;
+}
+.details{
+   
+   
+    margin: auto;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+    
+}
+
+
+.details h3{
+    font-family: Righteous, cursive;
+font-size: 25px;
+font-weight: 500;
+background-clip: text;
+background-image: linear-gradient( to right, rgb(60, 165, 92), rgb(254, 194, 96)) ;
+color: transparent;
+
+
+
+
+
+}
+.details label{
+    text-align: start;
+    font-weight: 600;
+    padding-bottom: .5rem
+}
+.name input:focus{
+    border-color: rgb(254, 194, 96);
+    box-shadow: 0 0 0 0.25rem #fec26055;;
+}
+
+.url input:focus{
+    border-color: rgb(254, 194, 96);
+    box-shadow: 0 0 0 0.25rem #fec26055;;
+}
+.details button{
+    background-color: #d1512d;
+    border-radius: 5px;
+    width: 130px;
+    height: 35px;
+    border: none;
+}
+.details button:hover{
+    background-color: #bb4120;
+}
+.div label{
+    font-weight: 600;
+    padding-bottom: .5rem
+}
+.div input:focus{
+    border-color: rgb(254, 194, 96);
+    box-shadow: 0 0 0 0.25rem #fec26055;;
+}
